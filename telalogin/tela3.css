@@ -1,0 +1,77 @@
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #9c2727, #ff4b4b);
+}
+
+.container {
+    background: rgb(255, 255, 255);
+    width: 380px;
+    padding: 40px 30px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.333);
+}
+
+.carinha {
+    font-size: 100px;
+    margin-bottom: 20px;
+    animation: triste 1s infinite alternate;
+}
+
+@keyframes triste {
+    from {
+        transform: translateY(0) rotate(-8deg);
+    }
+
+    to {
+        transform: translateY(12px) rotate(8deg);
+    }
+}
+
+h1 {
+    color: #000000;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: #444;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+p {
+    color: #777;
+    margin: 12px 0;
+}
+
+button {
+    background: #da0e0e;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 15px 25px;
+    border-radius: 30px;
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #8e0000;
+    transform: scale(1.08);
+}
